@@ -1,0 +1,33 @@
+---
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    css: [css/style.css,
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+    "https://use.fontawesome.com/releases/v5.8.2/css/all.css"]
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+layout: true
+---
+class: no-number left middle
+
+# Introducción al tidyverse
+### Lectura de datos
+
+<hr>
+<p style = "font-family: 'Just Another Hand', cursive;">
+Carlos Agüero B 
+</p> 
+
