@@ -13,21 +13,103 @@ output:
       countIncrementalSlides: false
 editor_options: 
   chunk_output_type: console
+params:
+  title: "Introducción al tidyverse"
+  subtitle: "Lectura de datos"
+  github:  "https://github.com/aguerodev"
+  name : "Carlos Agüero"
 ---
 
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = TRUE,
+                      comment = "",
+                      warning = FALSE,
+                      message = FALSE,
+                      fig.align = "center",
+                      fig.retina = 3,
+                      dev = 'png',
+                      fig.height = 5,
+                      out.width = 600)
 ```
+
 layout: true
 ---
 class: no-number left middle
 
-# Introducción al tidyverse
-### Lectura de datos
+# `r params$title`
+### `r params$subtitle`
 
 <hr>
-<p style = "font-family: 'Just Another Hand', cursive;">
-Carlos Agüero B &nbsp; <a href = "https://github.com/aguerodev"><i class="fab fa-github blue"></i></a>
-</p> 
+<h3 style = "font-family: 'Just Another Hand', cursive;">
+`r params$name` B &nbsp; <a href = `r params$github`><i class="fab fa-github blue"></i></a>
+</h3> 
 
+---
+## Soy un título
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+### Una lista
++ item 1
++ item 2
++ item 3
+
+---
+
+### Código
+
+```{r, number = T}
+if (TRUE) {
+  1:10
+}
+```
+
+---
+
+### Gráfico
+
+.row[
+.col-6[
+```{r ref.label = 'grafico1', eval=F}
+
+```
+
+]
+.col-6[
+```{r grafico1, echo=FALSE}
+library(ggplot2) #<<
+ggplot(
+  data = iris,
+  mapping = aes(
+    x = Sepal.Length,
+    y = Petal.Length)
+  ) +
+  geom_point()
+```
+
+]
+]
+
+---
+```{r}
+library(gt)
+gt(head(iris))
+```
+
+---
+class: bg-black no-number middle center
+<center>
+<i class="fab fa-creative-commons fa-8x"></i>
+<i class="fab fa-creative-commons-by fa-8x"></i>
+<i class="fab fa-creative-commons-nc fa-8x"></i>
+</center>
+<br>
+<h3 style = "color:#fffdf9;">
+Esta presentación se encuentra bajo los términos de la licencia 
+<br>
+<a  href="https://creativecommons.org/licenses/by-nc/4.0/">
+<strong style = "color:#fffdf9;">Atribución-NoComercial 4.0 Internacional</strong>
+</a>
+<h3>
