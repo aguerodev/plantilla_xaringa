@@ -18,27 +18,33 @@
  * ------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700&display=swap);
 @import url('https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+
 body {
-  font-family: Roboto, serif;
+
   font-weight: 300;
   color: #282828;
 }
 p{
-  font-size: 30px;
+  font-size: 20px;
   text-align: justify;
+  font-family: Roboto;
 }
 
 ul {
-  font-size: 1.2em;
+  font-size: 20px;
 }
 
+.remark-slide-content {
+  padding: 2em 2em 2em 2em;
+}
 .remark-slide-content h1 {
+    font-family: Roboto;
     font-weight: 700;
     color: #263859;
     font-size: 55px;
 }
 .remark-slide-content h2 {
-    font-family: Roboto;
     font-weight: 500;
     color: #263859;
     font-size: 45px;
@@ -53,8 +59,20 @@ ul {
   font-family: Source Code Pro, 'Lucida Console', Monaco, monospace;
 }
 .remark-code {
-    font-size: 1.3em;
+    font-size: 20px;
+    font-family: 'Fira Code', monospace;
 }
+.remark-code-line {
+  padding-left:5px;
+}
+pre {
+      border:none;
+      border-left: 5px solid;
+      border-color: #8ac6d1;
+      border-radius:0;
+}
+
+
 .remark-inline-code {
   font-size: 1em;
   color: #3a3a3a;
@@ -78,7 +96,8 @@ a, a > code {
   font-size: 0.9em;
 }
 .remark-code-line-highlighted {
-  background-color: #ffd700;
+  background-color: #ea9abb;
+  padding-left:5px;
 }
 .inverse {
   background-color: #3a3a3a;
@@ -177,24 +196,11 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 
 
 /* Extra CSS */
-div.my-footer {
-  background-color: #C8B028;
-  position: absolute;
-  bottom: 2.5%;
-  left: 0px;
-  height: 30px;
-  width: 82%;
-}
-div.my-footer span {
-  font-size: 1.2em;
-  color: #3a3a3a;
-  position: relative;
-  left: 1%;
-  top:5%
-}
 .remark-slide-number {
   position: absolute;
-  top: 2%;
+  bottom: 2%;
+  font-size:20px;
+  font-weight:500;
 }
 .no-number .remark-slide-number {
   display: none;
@@ -203,6 +209,7 @@ div.my-footer span {
 /*
 Clases Extras
 */
+
 
 .red{
   color:#fa4659;
@@ -255,6 +262,13 @@ Clases Extras
 .bg-green{
   color:#FFFFFF;
   background-color:#58b368;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+.bg-black{
+  color:#FFFFFF;
+  background-color:#1b262c;
   padding-left:2px;
   padding-right:2px;
 }

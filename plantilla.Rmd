@@ -28,6 +28,6 @@ class: no-number left middle
 
 <hr>
 <p style = "font-family: 'Just Another Hand', cursive;">
-Carlos Agüero B 
+Carlos Agüero B &nbsp; <a href = "https://github.com/aguerodev"><i class="fab fa-github blue"></i></a>
 </p> 
 
